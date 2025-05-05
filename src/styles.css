@@ -46,6 +46,10 @@ mat-card-title {
   padding: 0.7rem;
 }
 
+.mt04 {
+  margin-top: 0.4rem;
+}
+
 * {
   margin: 0;
   padding: 0;

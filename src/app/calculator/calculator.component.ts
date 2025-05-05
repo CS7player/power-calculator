@@ -22,7 +22,7 @@ export class CalculatorComponent implements OnInit {
  ];
  symbol: any = ["%", "/", "*", "-", "+", "^"];
  ngOnInit(): void {
-
+  this.equation = "";
  }
 
  eventHandler(event: any) {
