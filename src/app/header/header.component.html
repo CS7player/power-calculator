@@ -1,0 +1,13 @@
+<header>
+ @for(item of titleData;track $index){
+  <button 
+  mat-raised-button 
+  color="primary" 
+  [routerLink]="item['route']"
+  [class.active]="activeIndex == $index"
+  (click)="activeIndex = $index">
+   {{item['title']}} <i class="fa-solid {{item['icon']}}"></i>
+ </button>
+ }
+ 
+</header>

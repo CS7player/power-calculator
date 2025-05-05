@@ -1,0 +1,10 @@
+@use "header";
+@use "bg";
+
+.full-page{
+ width: 100%;
+ box-sizing: border-box;
+ height: 100vh;
+ background-color: rgb(18, 18, 18);
+ padding: 0.7rem;
+}

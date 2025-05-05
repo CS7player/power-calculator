@@ -1,0 +1,21 @@
+<mat-card>
+ <mat-card-header>
+  <mat-card-title>Calculator</mat-card-title>
+ </mat-card-header>
+
+ <mat-card-content>
+  <mat-form-field appearance="fill" class="ip-cal">
+   <input matInput [(ngModel)]="equation">
+  </mat-form-field>
+ </mat-card-content>
+
+ <mat-card-actions class="order">
+  @for(item of buttonData;track $index){
+  <button mat-raised-button 
+  color="primary"
+  (click)="eventHandler(item)">
+   {{item['name']}}
+  </button>
+  }
+ </mat-card-actions>
+</mat-card>
